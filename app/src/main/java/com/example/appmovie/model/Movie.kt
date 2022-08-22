@@ -14,5 +14,7 @@ data class Movie(
     @SerializedName("adult")
     val adult:Boolean,
     @SerializedName("backdrop_path")
-    val imagen:String
+    val imagen:String,
+    @SerializedName("release_date")
+    val fecha:String
 ): Serializable

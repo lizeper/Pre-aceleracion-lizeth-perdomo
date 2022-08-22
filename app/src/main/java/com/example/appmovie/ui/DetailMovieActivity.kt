@@ -33,6 +33,7 @@ class DetailMovieActivity : AppCompatActivity() {
 
         binding.voteAverage.text = movie.voteAverage.toString()
         binding.Description.text = movie.overview
+        binding.date.text = movie.fecha
 
         setContentView(binding.root)
     }

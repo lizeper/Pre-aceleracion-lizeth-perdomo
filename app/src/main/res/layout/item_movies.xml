@@ -33,6 +33,7 @@
                 android:layout_height="127dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="5dp"
                 app:layout_constraintTop_toBottomOf="@+id/title_movie" />
 
 
@@ -41,6 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombre pelicula"
+                android:layout_marginLeft="5dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +55,7 @@
                 android:layout_marginLeft="15dp"
                 android:text="voto"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/image_movie"
                 app:layout_constraintTop_toTopOf="@+id/image_movie" />
 
@@ -68,9 +71,7 @@
                 android:text="Descripción"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image_movie"
-                app:layout_constraintTop_toBottomOf="@+id/voteAverage"
-
-                />
+                app:layout_constraintTop_toBottomOf="@+id/voteAverage" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

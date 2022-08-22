@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".ui.DetailMovieActivity">
+    android:padding="25dp"
+    tools:context=".ui.DetailMovieActivity"
+    android:background="@color/cardview_dark_background">
 
 
     <TextView
@@ -13,21 +14,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre Pelicula"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
-
-
-
+        app:layout_constraintVertical_bias="0.09" />
 
     <ImageView
         android:id="@+id/image_movie"
-        android:layout_width="106dp"
-        android:layout_height="127dp"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_movies_detalle"
@@ -39,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Puntuación"
-        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_movie" />
@@ -50,7 +50,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="voto"
-        android:textSize="25sp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,10 +62,11 @@
         android:id="@+id/details"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
         android:text="Vista general"
         android:textSize="20sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,16 +75,31 @@
 
     <TextView
         android:id="@+id/Description"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="Description"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="11"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/details" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha de la pelicula"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_movies_detalle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,5 +9,5 @@ interface MoviesService {
 
     //obtener GET las peliculas populares y anexar movies/popular de la api
     @GET("movie/popular")
-    fun getPopular(@Query("api_key")apiKey:String): Call<PopularMovies>
+    fun getPopular(@Query("api_key")apiKey:String,@Query("language")lenguage:String): Call<PopularMovies>
 }

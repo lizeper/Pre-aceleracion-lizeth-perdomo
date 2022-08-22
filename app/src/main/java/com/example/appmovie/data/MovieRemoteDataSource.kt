@@ -17,7 +17,8 @@ class MovieRemoteDataSource {
         val service = RetrofitService.instance
             //servicio y la interface
             .create(MoviesService::class.java)
-            .getPopular(BuildConfig.API_KEY)
+            .getPopular(BuildConfig.API_KEY,BuildConfig.API_language)
+
 
 
 

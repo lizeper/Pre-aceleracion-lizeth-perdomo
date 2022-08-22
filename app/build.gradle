@@ -15,6 +15,7 @@ android {
 
         buildConfigField("String","API_KEY","\"b0e238adeb43d18ab6dd02b54cb1bdc4\"")
         buildConfigField("String","API_URL","\"https://api.themoviedb.org/3/\"")
+        buildConfigField("String","API_language","\"es-Es\"")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
